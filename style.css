@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::before *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 90rem;
+  display: flex;
+  border-radius: 2rem;
+}
+
+/* --------------Box Design------------ */
+
+.box {
+  padding: 5rem;
+}
+.box1 {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: hsl(31, 77%, 52%);
+}
+.box2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.box3 {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: hsl(179, 100%, 13%);
+}
+.heading {
+  margin: 3rem 0;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+}
+.content {
+  margin: 5rem 0 10rem 0;
+  color: #fff;
+}
+
+/* --------Button Design------------- */
+
+.button {
+  text-decoration: none;
+}
+.button1 {
+  padding: 1rem 2rem;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  border: 0.2rem solid hsl(0, 0%, 95%);
+  border-radius: 2rem;
+}
+.button1:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+}
+.button2 {
+  padding: 1rem 2rem;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+  border: 0.2rem solid hsl(0, 0%, 95%);
+  border-radius: 2rem;
+}
+.button2:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+.button3 {
+  padding: 1rem 2rem;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+  border: 0.2rem solid hsl(0, 0%, 95%);
+  border-radius: 2rem;
+}
+.button3:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* -------------Media Query------------------ */
+
+@media (max-width: 1000px) and (min-width: 550px) {
+    body{
+        display: block;
+    }
+  .container {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+  }
+  .box1 {
+    border-radius: 2rem 2rem 0 0;
+  }
+  .box3 {
+    border-radius: 0 0 2rem 2rem;
+  }
+}
+@media (max-width: 549px) and (min-width: 300px) {
+    body{
+        display: block;
+    }
+  .container {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+  }
+  .content{
+    margin: 5rem 0;
+  }
+  .box1 {
+    border-radius: 2rem 2rem 0 0;
+  }
+  .box3 {
+    border-radius: 0 0 2rem 2rem;
+  }
+}
+@media (max-width: 299px){
+    body{
+        display: block;
+    }
+  .container {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+  }
+  .content{
+    margin: 5rem 0;
+  }
+  .box1 {
+    border-radius: 2rem 2rem 0 0;
+  }
+  .box3 {
+    border-radius: 0 0 2rem 2rem;
+  }
+}
